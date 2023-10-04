@@ -1,0 +1,153 @@
+{{ 'custom-reviews-section.css' | asset_url | stylesheet_tag }}
+
+ <!-- review section start from here -->
+ <section class="reviewsection">
+    <div class="page-width">
+        <div class="reviewswrp">
+            <div class="reviewTopWrper">
+                <div class="content">
+                    <h1>{{ section.settings.heading }}</h1>
+                    <Span>{{ section.settings.content }}</Span>
+                </div>
+                <div class="review-images">
+                  {% for block in section.blocks %}
+                    {% case block.type %}
+                      {% when 'review' %}
+                        <div class="review-image {% if forloop.first %}active{% endif %}">
+                          <img src="{{ block.settings.image_desktop | image_url: width: 749 }}" width="750" height="auto" loading="lazy" alt="{{ block.settings.image.alt }}">
+                        </div>
+                    {% endcase %}
+                  {% endfor %}
+                </div>
+            </div>
+            <div class="feedbackWrpinreview">
+              <!-- Slider main container -->
+              <div class="swiper reviewCarousel">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper reviews-wrapper">
+                    {% for block in section.blocks %}
+                      {% case block.type %}
+                        {% when 'review' %}
+                          <div class="swiper-slide review-slide r1">
+                              <div class="image-wrap">
+                                  <img src="{{ block.settings.image_desktop | image_url: width: 749 }}" width="750" height="auto" loading="lazy" alt="{{ block.settings.image.alt }}">
+                              </div>
+                              <div class="image-wrap-mobile">
+                                  <img src="{{ block.settings.image | image_url: width: 500 }}" width="750" height="auto" loading="lazy" alt="{{ block.settings.image.alt }}">
+                              </div>
+                              <div class="text">
+                                  <b class=" star">
+                                      &#9733;
+                                      &#9733;
+                                      &#9733;
+                                      &#9733;
+                                      &#9733;
+                                  </b>
+                                  <h1 class="reviewHead">{{ block.settings.heading }}</h1>
+                                  <p class="reviewDis">{{ block.settings.content }}</p>
+                              </div>
+                          </div>
+                        {% endcase %}
+                      {% endfor %}
+                      <div class="swiper-slide review-slide extra-space r1">
+                            
+                        </div>
+                      </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- review section end from here -->
+<script>
+    // Get all review slides
+    const reviewSlides = document.querySelectorAll('.reviews-wrapper .review-slide');
+
+    // Add hover event listener to each review slide
+    reviewSlides.forEach((slide, index) => {
+        slide.addEventListener('mouseenter', () => {
+            // Remove the 'active' class from all review images
+            document.querySelectorAll('.review-images .review-image').forEach(image => {
+                image.classList.remove('active');
+            });
+
+            // Add the 'active' class to the corresponding review image
+            const reviewImage = document.querySelector(`.review-image:nth-child(${index + 1})`);
+            if (reviewImage) {
+                reviewImage.classList.add('active');
+            }
+        });
+    });
+</script>
+{% schema %}
+    {
+      "name": "Custom Reviews",
+      "tag": "section",
+      "settings": [
+        {
+        "type": "textarea",
+        "label": "Heading",
+        "id": "heading",
+        "default": "REVIEWS"
+        },
+        {
+        "type": "textarea",
+        "label": "Content",
+        "id": "content",
+        "default": "1000+ 5 start Reviews"
+        }
+      ],
+      "blocks": [
+        {
+        "type": "review",
+        "name": "Review",
+        "settings": [
+          {
+          "type": "image_picker",
+          "label": "Image",
+          "id": "image_desktop"
+          },
+          {
+          "type": "image_picker",
+          "label": "Image",
+          "id": "image"
+          },
+          {
+          "type": "textarea",
+          "label": "Heading",
+          "id": "heading",
+          "default": "Donna Picerno"
+          },
+          {
+            "type": "textarea",
+            "label": "Content",
+            "id": "content",
+            "default": "My first Ironman. I had an issue in the past with clipping in giving me anxiety. Now that I have these pedals that has gone away. Thanks for making these !"
+          }
+        ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "Custom Reviews",
+          "blocks": [
+            {
+              "type": "review"
+            },
+            {
+              "type": "review"
+            },
+            {
+              "type": "review"
+            },
+            {
+              "type": "review"
+            },
+            {
+              "type": "review"
+            }
+          ]
+        }
+      ]
+    }
+{% endschema %}

@@ -1,0 +1,315 @@
+.article-template > *:first-child:not(.article-template__hero-container) {
+  margin-top: 5rem;
+}
+
+@media screen and (min-width: 750px) {
+  .article-template > *:first-child:not(.article-template__hero-container) {
+    margin-top: calc(5rem + var(--page-width-margin));
+  }
+}
+
+.article-template__hero-container {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.article-template__hero-small {
+  height: 11rem;
+}
+
+.article-template__hero-medium {
+  height: 22rem;
+}
+
+.article-template__hero-large {
+  height: 33rem;
+}
+
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .article-template__hero-small {
+    height: 22rem;
+  }
+
+  .article-template__hero-medium {
+    height: 44rem;
+  }
+
+  .article-template__hero-large {
+    height: 66rem;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .article-template__hero-small {
+    height: 27.5rem;
+  }
+
+  .article-template__hero-medium {
+    height: 55rem;
+  }
+
+  .article-template__hero-large {
+    height: 82.5rem;
+  }
+}
+
+.article-template header {
+  margin-top: 4.4rem;
+  margin-bottom: 2rem;
+  line-height: calc(0.8 / var(--font-body-scale));
+}
+
+@media screen and (min-width: 750px) {
+  .article-template header {
+    margin-top: 5rem;
+  }
+}
+
+.article-template__title {
+  margin: 0;
+}
+
+.article-template__title:not(:only-child) {
+  margin-bottom: 1rem;
+}
+
+.article-template__link {
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.article-template__link .icon-wrap {
+  display: flex;
+  margin-right: 1rem;
+  transform: rotate(180deg);
+}
+
+.article-template__content {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.article-template__social-sharing {
+  margin-top: 3rem;
+}
+
+.article-template__social-sharing + header,
+.article-template__social-sharing + .article-template__content {
+  margin-top: 1.5rem;
+}
+
+.article-template__comment-wrapper {
+  margin-top: 5rem;
+  padding: 2.7rem 0;
+}
+
+@media screen and (min-width: 750px) {
+  .article-template__comment-wrapper {
+    margin-top: 6rem;
+    padding: 3.6rem 0;
+  }
+}
+
+.article-template__comment-wrapper h2 {
+  margin-top: 0;
+}
+
+.article-template__comments {
+  margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 750px) {
+  .article-template__comments {
+    margin-bottom: 7rem;
+  }
+}
+
+.article-template__comments-fields {
+  margin-bottom: 4rem;
+}
+
+.article-template__comments-comment {
+  color: rgba(var(--color-foreground), 1);
+  background-color: rgb(var(--color-background));
+  margin-bottom: 1.5rem;
+  padding: 2rem 2rem 1.5rem;
+}
+
+@media screen and (min-width: 750px) {
+  .article-template__comments-comment {
+    padding: 2rem 2.5rem;
+  }
+}
+
+.article-template__comments-comment p {
+  margin: 0 0 1rem;
+}
+
+.article-template__comment-fields > * {
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 750px) {
+  .article-template__comment-fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 4rem;
+  }
+}
+
+.article-template__comment-warning {
+  margin: 2rem 0 2.5rem;
+}
+
+@media screen and (min-width: 990px) {
+  .article-template__comments .pagination-wrapper {
+    margin: 5rem 0 8rem;
+  }
+}
+
+.article-template__back:last-child {
+  margin-bottom: 3.2rem;
+}
+/* ==Talha== MULTIISIGHT ==Start== */
+/* ============================= */
+/* Overrides */
+
+.article-template__back a {
+  text-decoration: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20.642px;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+.article-template__hero-container {
+  max-width: 100%;
+}
+.article-template__link .icon-wrap {
+  transform: none;
+}
+.article-template__link {
+  justify-content: flex-start;
+}
+.article-template header {
+  color: #FC481D;
+  margin-top: 0;
+}
+.article-template__title {
+  color: #fc481d; 
+  font-size: 105.7px;
+  line-height: 101px;
+  max-width: 72.6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.article-template__content {
+  max-width: 638px;
+}
+.article-template__content {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 39px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 750px) {
+  article.article-template {
+    overflow: hidden;
+}
+  .article-template time {
+    display: none;
+  }
+  .article-template__title {
+      font-size: 4.2rem;
+      max-width: 67%;
+      line-height: 44px;
+  }
+  .articleSlider {
+    overflow: visible;
+}
+.articleSlider .swiper-wrapper {
+  max-width: 77%;
+}
+
+
+}
+/* Overrides End*/
+
+
+
+/* Custom */
+
+.articleSlider {
+  border: 1px solid #FC481D;
+}
+.articleSlider .swiper-wrapper .swiper-slide {
+  border-right: 1px solid #FC481D;
+  height: auto;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  left: auto;
+  right: 70px;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+  content: unset;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev, .swiper-button-prev, .swiper-rtl .swiper-button-next {
+  top: auto;
+  bottom: 5%;
+  width: 4.4rem;
+  display: flex !important;
+  padding: 6px;
+  border-radius: 500px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%), var(--color-scheme-base-secondary, #FFF);
+  opacity: 1 !important;
+}
+.articleSlider .swiper-button-next:not(.swiper-button-disabled), .articleSlider .swiper-button-prev:not(.swiper-button-disabled) {
+  border-radius: 500px;
+  background: var(--color-scheme-base-brand, #FC481D);
+}
+
+.articleSlider .swiper-slide img {
+  width: 100%;
+  height: auto;
+  margin-bottom: -10px;
+}
+
+/* .articleSlider .swiper-wrapper .swiper-slide {
+  padding-bottom: var(--ratio-percent);
+}
+
+.articleSlider .swiper-wrapper .swiper-slide img {
+  object-fit: contain;
+  object-position: center center;
+  transition: opacity .4s cubic-bezier(.25,.46,.45,.94);
+  display: block;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+} */
+
+@media screen and (max-width: 750px) {
+  .swiper-slide {
+    width: 100% !important;
+}
+
+
+}
+
+/* Custom End*/
+
+/* ==Talha== MULTIISIGHT ==End== */
+/* ============================ */
+

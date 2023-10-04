@@ -1,0 +1,79 @@
+.contact img {
+  max-width: 100%;
+}
+
+.contact .form__message {
+  align-items: flex-start;
+}
+
+.contact .icon-success {
+  margin-top: 0.2rem;
+}
+
+.contact .field {
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 750px) {
+  .contact .field {
+    margin-bottom: 2rem;
+  }
+}
+
+.contact__button {
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 750px) {
+  .contact__button {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .contact__fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+  }
+}
+
+
+
+/* ==Talha== MULTIISIGHT ==Start== */
+/* ============================= */
+/* Overrides */
+.contact h2.title {
+  text-transform: uppercase;
+}
+.contact .text {
+  font-family: 'Roboto', sans-serif;
+}
+form#ContactForm {
+  margin-top: 48px;
+}
+.contact .field {
+  margin-bottom: 1.6rem;
+}
+.contact.page-width .text {
+  max-width: 72rem;
+}
+.contact :is(.field__input,.text-area) {
+  border: 1px solid rgba(0,0,0,.2);
+}
+.contact__button {
+  margin-top: 4.8rem;
+}
+@media screen and (min-width: 750px){
+  .contact__fields,.contact form > .field {
+    max-width: 60%;
+  }
+  .contact__fields {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Overrides End*/
+
+/* ==Talha== MULTIISIGHT ==End== */
+/* ============================ */

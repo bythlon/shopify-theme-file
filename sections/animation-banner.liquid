@@ -1,0 +1,64 @@
+<style>
+  
+section.animation-banner {
+    position: relative;
+    z-index: -1;
+}
+#set-height {
+  display: block;
+}
+#v0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.animation-banner p  {
+  font-size: 24px;
+}
+</style>
+<section class="animation-banner">
+
+  <div id="set-height"></div>
+  <p id="time"></p>
+  <video id="v0" tabindex="0" autobuffer="autobuffer" preload="preload">
+    <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="https://cdn.shopify.com/videos/c/o/v/482d77674ee64d83b55ff8bf3d05c809.mp4"></source>
+  </video>
+  
+</section>
+  <script>
+    var frameNumber = 0, // start video at frame 0
+    // lower numbers = faster playback
+    playbackConst = 500, 
+    // get page height from video duration
+    setHeight = document.getElementById("set-height"), 
+    // select video element         
+    vid = document.getElementById('v0'); 
+
+// dynamically set the page height according to video length
+vid.addEventListener('loadedmetadata', function() {
+  setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
+});
+
+// Use requestAnimationFrame for smooth playback
+function scrollPlay(){  
+  var frameNumber  = window.pageYOffset/playbackConst;
+  vid.currentTime  = frameNumber;
+  window.requestAnimationFrame(scrollPlay);
+}
+
+window.requestAnimationFrame(scrollPlay);
+  </script>
+{% schema %}
+  {
+    "name": "Animation Banner",
+    "tag": "section",
+    "settings": [],
+    "blocks": [],
+    "presets": [
+      {
+        "name": "Animation Banner"
+      }
+    ]
+  }
+  {% endschema %}

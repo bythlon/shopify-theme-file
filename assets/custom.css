@@ -1,0 +1,920 @@
+
+/* hero section css here */
+
+.heroWrper {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    height: 450px;
+    margin-top: 76px;
+}
+
+
+.heroHeader {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+.bythlonHeader{
+    color: #fc481d;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bythlonHeader>span{
+    font-weight: 400px!important;
+    font-size: 280px;
+}
+
+.herobgProduct {
+    height: 100%;
+    width: 100vw;
+    z-index: -10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(20%);
+}
+
+
+/* 25% off section css start from here */
+.Off {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.offheading {
+    padding-top: 15px!important;
+    padding-bottom: 15px!important;
+}
+
+.imageAndTopHeaderwtp {
+    display: flex;
+    grid-gap: 5px;
+    align-items: center;
+    margin-left: -8px;
+}
+
+.dot {
+    color: #fc481d;
+}
+
+.wordFistheader {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: rgb(61, 61, 61);
+}
+
+.incresseheader {
+    color: rgb(61, 61, 61);
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.discoutnbtnGroup {
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+    margin: 10px 0px;
+}
+
+
+.shopnowbtn {
+    padding: 12px 25px;
+    background: rgb(0, 0, 0);
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    font-size: 19px;
+    margin: 20px 0px;
+    cursor: pointer;
+    font-weight: 400!important;
+}
+
+.introvedio {
+    padding: 6px 15px;
+    border-radius: 25px;
+    border: 1px solid rgb(39, 39, 39);
+    outline: none;
+    color: black;
+    background: #fff2f2;
+    font-size: 19px;
+    margin: 20px 0px;
+    cursor: pointer;
+    display: flex;
+    grid-gap: 5px;
+    align-items: center;
+}
+
+.introvedio>img {
+    width: 30px;
+    height: 30px;
+}
+
+.playbtnHover {
+    height: 110px;
+    width: 250px;
+    display: none;
+    position: absolute;
+    left: 420px;
+}
+
+.demodevio {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.introvedio:hover+.playbtnHover {
+    display: block !important;
+}
+
+.playbtnHover:hover {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* shop page css code start from here */
+
+/* shop item section css code */
+.shopSection {
+    padding: 60px 0px;
+}
+
+.shopHeaderWrp {
+    display: flex;
+    gap: 30px;
+}
+
+.shopHeaderWrp>h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #fc481d;
+    line-height: 50px;
+    font-weight: 500;
+}
+
+.shopHeaderWrp>div {
+    width: 100%;
+}
+
+.SingleShop {
+    width: 100%;
+    border-top: 2px solid #fc481d;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+}
+
+.firstclicd {
+    margin-top: 90px;
+}
+
+
+.singleshopheaderwrp>h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.singleshopheaderwrp>div {
+    font-size: 20px;
+    padding: 15px 0px;
+    display: flex;
+    gap: 10px;
+}
+
+/* //single shop item page css code here */
+.singlefrist {
+    border: none;
+    align-items: center !important;
+    padding: 0px;
+}
+
+.itemHeaderWrp {
+    width: 100%;
+    border-right: 1px solid #ff977c;
+    padding-right: 30px;
+}
+
+.shareandbackWrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.backimg {
+    margin-left: -15px;
+}
+
+.itemHeaderWrp>h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-top: 10px;
+    color: #fc481d;
+}
+
+.itemHeaderWrp>p {
+    padding: 10px 0px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(46, 46, 46);
+}
+
+.singlesopPriceingGroup {
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+    color: #fc481d;
+    padding-top: 10px;
+}
+
+.itemHeaderWrp>small {
+    text-transform: uppercase;
+    color: #fc481d;
+    font-weight: 500;
+}
+
+.singleShopItemsButtonGroup {
+    padding-bottom: 20px;
+    padding-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.singleShopItemsButtonGroup>button {
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.addtocartSingleshop {
+    background: black;
+    color: #fff;
+}
+
+.shoppaysingleShop {
+    border: 1px solid #fc481d !important;
+    background-color: #fff2f2;
+}
+
+.itemHeaderWrp>a {
+    font-size: 20px;
+    color: black;
+}
+
+.singeshopitemimg {
+    height: 100%;
+}
+
+
+/* about us page css code start from here */
+.aboutWrper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.aboutdetailseWrp>h1 {
+    color: #fc481d;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.aboutdetailseWrp>p {
+
+    color: #fc481d;
+    font-size: 18px;
+}
+
+.aboutdetailseWrp {
+    width: 60%;
+
+}
+
+.aboutheroWrp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.abouthero {
+    width: 70%;
+    border-radius: 15px;
+}
+
+.aboutheroWrp>h2 {
+    color: #fc481d;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+
+.aboutheroWrp>p {
+    color: #fc481d;
+    text-transform: capitalize;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.contactusinaboutWrp {
+    padding-top: 80px;
+}
+
+.contactusinaboutWrp>h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.contactusinaboutWrp>div {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+.contactusinaboutWrp>div>input {
+    padding: 15px;
+    width: 60%;
+    border-radius: 15px;
+    border: 1px solid #fc481d;
+    background: #fff;
+    color: black;
+    margin: 10px 0px;
+    font-size: 16px;
+
+}
+
+.contactusinaboutWrp>div>textarea {
+    padding: 15px;
+    width: 60%;
+    border-radius: 15px;
+    border: 1px solid #fc481d;
+    background: #fff;
+    color: black;
+    margin: 10px 0px;
+    height: 200px;
+    font-size: 16px;
+
+}
+
+.sendbuttbnaboutus {
+    padding: 13px 20px;
+    border-radius: 20px;
+    background: black;
+    color: #fff;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 425px) {
+    .cartWrper{
+        margin-left: 50px;
+    }
+    .cartWrper{
+        display: none;
+    }
+    .mobileCart{
+        display:block;
+        background: #fff;
+    }
+
+    .bythlonHeader>span{
+        font-weight: 400px!important;
+        font-size: 70px!important;
+    } 
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 475px) {
+    
+    .logo {
+        width: 140px;
+    }
+
+
+    .bythlonHeader>span{
+        font-weight: 400px!important;
+        font-size: 80px!important;
+    } 
+
+    .beaterCycingScrool{
+        font-size: 7px;
+    }
+
+
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .cartWrper{
+        margin-left: 50px;
+    }
+    .singleshopheaderwrp{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .offheading {
+        font-size: 50px!important;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    .whatmakesheadeing {
+        font-size: 50px!important;
+    }
+    .buildingheader {
+        font-size: 50px!important;
+    }
+
+
+    
+    .reviewTopWrper>div>h1 {
+        font-size: 40px!important;
+    }
+
+
+    
+    .playbtnHover {
+        height: 110px;
+        width: 250px;
+        display: none;
+        position: absolute;
+        left: 100px!important;
+        transform: translateY(-100px);
+    }
+
+
+    .two1{
+        display:none;
+    }
+    .three1{
+        display: none;
+    }
+
+    .one2{
+        display:none;
+    }
+    .three2{
+        display: none;
+    }
+
+    .one3{
+        display:none;
+    }
+    .two3{
+        display: none;
+    }
+    .one4{
+        display:none;
+    }
+    .two4{
+        display: none;
+    }
+
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) and (min-width:425px) {
+
+
+    .beaterCycingScrool{
+        font-size: 10px;
+    }
+
+    .bythlonHeader>span{
+        font-weight: 400px!important;
+        font-size: 140px!important;
+    } 
+
+    .reviewTopWrper{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .swiper{
+        width: 100%;
+    }
+    .swiper-wrapper{
+        width: 100%;
+    }
+    .swiper-slide{
+        width: 100%;
+    }
+    .swiperImg{
+        width: 100%;
+    }
+    .builtImg{
+        width: 100%;
+    }
+    .allpolicyWrp{
+        flex-direction: column;
+    }
+    .allpolicyWrp>div>ul{
+        flex-direction: column;
+    }
+
+    .noneformobile{
+        display: none;
+        position: absolute;
+        width: 250px;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+
+    .blockForMobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: fit-content;
+        gap: 10px;
+    }
+
+    .navWrper>ul{
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 200px;
+        border-radius: 0px;
+        background: #ff977c;
+    }
+
+    .berJustshowmobile{
+        display: block;
+    }
+    .cartWrper{
+        margin-left: 60px;
+    }
+    .shopHeaderWrp{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: centers;
+    }
+    .SingleShop{
+        flex-direction: column;
+    }
+    .singleshopimagewrp{
+        width: 100%;
+    }
+    .singleshopimagewrp>img{
+        width: 100%;
+    }
+    .singlefrist{
+        flex-direction: column-reverse!important;
+    }
+    .aboutWrper{
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+    }
+    .aboutdetailseWrp>h1{
+        font-size: 40px!important;
+    }
+    .contactusinaboutWrp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .contactusinaboutWrp>button{
+        width: 60%;
+    }
+    .contactusinaboutWrp>div>input{
+        width: 100%!important;
+    }
+    .contactusinaboutWrp>div>textarea{
+        width: 100%!important;
+    }
+
+
+    .offheading {
+        font-size: 60px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+
+
+    .whatmakesheadeing {
+        font-size: 60px;
+    }
+
+
+    .buildingheader {
+        font-size: 60px;
+    }
+
+
+
+
+    .reviewTopWrper>div>h1 {
+        font-size: 50px;
+    }
+
+    
+    .playbtnHover {
+        height: 110px;
+        width: 250px;
+        display: none;
+        position: absolute;
+        left: 350px;
+    }
+
+
+    .three1{
+        display: none;
+    }
+
+    .one2{
+        display: none;
+    }
+
+    .one3{
+        display: none;
+    }
+
+    .one4{
+        display: none;
+    }
+
+
+
+
+    .div1{
+        top: 110px;
+        left: 190px;
+    
+    }
+    .lineandtext1{
+        top: 90px;
+        left: 220px;
+    }
+
+
+    .div2{
+        top: 220px;
+        left: 300px;
+    
+    }
+    .lineandtext2{
+        top: 210px;
+        left: 330px;
+        width: 100px;
+    }
+
+    .div3{
+        top: 210px;
+        left: 80px;
+    
+    }
+    .lineandtext3{
+        top: 200px;
+        left: -70px;
+        width: 150px;
+    }
+
+
+    .div4{
+        
+        top: 410px;
+        left: 45px;
+    
+    }
+    .lineandtext4{
+        top: 410px;
+        left: 75px;
+    }
+
+    .div5{
+        top: 360px;
+        left:300px;
+    }
+    .lineandtext5{
+        top: 340px;
+        left:100px;
+        width: 200px;
+    }
+
+    .div6{
+        top: 480px;
+        left: 175px;
+    }
+    .lineandtext6{
+        top: 475px;
+        left:205px;
+    }
+    
+
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 900px) and (min-width:769px) {
+
+    .bythlonHeader>span{
+        font-weight: 400px!important;
+        font-size: 170px!important;
+    }  
+    
+    .allpolicyWrp>div>ul{
+        flex-direction: column;
+    }
+    .beaterCycingScrool{
+        font-size: 14px;
+    }
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 1024px)and (min-width:901px) {
+
+    .bythlonHeader>span{
+        font-weight: 400px!important;
+        font-size: 200px!important;
+    }  
+  
+
+    .buildingforcyclingWrper{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .whatmakesWrperTop{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .beaterCycingScrool{
+        font-size: 16px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1300px) and (min-width:1025px) {
+
+
+    .bythlonHeader>span{
+        font-weight: 400px!important;
+        font-size: 250px;
+    }    
+    .beaterCycingScrool{
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (min-width: 1300px) {
+
+    .heroHeader>h1{
+        font-size: 165px!important;
+        letter-spacing:80px;
+    }
+    .footerHeader{
+        font-size: 165px;
+        letter-spacing:60px;
+          color:#ffffff;
+    }
+}
+
+
+.offheading {
+  line-height: 80px;
+  color: #000;
+}
+.buildingheader {
+  color: #fff;
+  line-height: 80px;
+}
+.cycle_marq{
+leading-trim: both;
+text-edge: cap;
+font-size: 25.983px;
+font-family: IBM Plex Sans,sans-serif;;
+font-style: normal;
+font-weight: 450;
+line-height: normal;
+text-transform: uppercase;
+  padding-top:60px;
+  padding-bottom:15px;
+}
+.whatmakesheadeing {
+    line-height: 0.8;
+    text-transform: uppercase;
+    font-size: 10rem;
+}
+.brand_image {
+  margin-top: 0 !important;
+}
+.shopnowbtn {
+  text-decoration: none;
+  padding: 5px 15px;
+}
+@media (max-width: 767.98px) { 
+
+  .offheading {
+  line-height: 30px;
+  color: #000;
+  font-size: 38px;
+  margin: 15px 0;
+}
+  .buildingheader {
+  font-size: 32px;
+  line-height: 38px;
+}
+  .cycle_marq{
+    font-size:18px;
+  }
+  .whatmakesheadeing {
+  font-size: 32px;
+  line-height: 38px;
+
+}
+  .swiperImg {
+  height: auto;
+}
+  .product__title.h1 {
+  font-size: 32px;
+  line-height: 38px;
+}
+  .reviewsection {
+  padding-top: 30px;
+}
+  .faq-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+}
+
+.slideVedio {
+    display: none;
+}
+
